@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRINK WORK..</title>
+    <link rel="stylesheet" href="brinkwork.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
-    
+    <!-- <div class="signInDiv">
+        <p class="signInText">Sign in</p>
+        <div class="innerDivOne">
+        <p class="LabelOne">Enter email address</p>
+        <input type="email" id="textAreaOne" name="email">
+        </div>
+        <br>
+        <div class="innerDivTwo">
+        <p class="LabelTwo">Enter Password</p>
+        <input type="password" id="textAreaTwo" name="password">
+        <span class="password-toggler">
+            <i class="eye-icon" id="eyeIcon">👁️</i>
+        </span>
+        <a class="forgotLink">Forgot?</a>
+    </div>
+    </div> -->
+    <div class="signInDiv">
+        <form class="signup-form">
+            <h2 class="signInText">Sign in</h2>
+            
+            <label for="email" class="LabelOne">Enter email address</label>
+            <input type="email" id="textAreaOne" name="email"  required>
+            <br>
+            <label for="password" class="LabelTwo">Password</label>
+            <a class="forgotlink" id="forgotLink">Forgot?</a>
+
+            <div class="password-container">
+                <input type="password" id="textAreaTwo" name="password" required>
+                <i id="togglePassword" class="fa fa-eye"></i>
+            </div>  
+
+            <p>New here? <a href="createAccount" class="createaccount">Create an account</a></p>
+            <button type="submit">Sign in</button> <br>
+            <p class="footnote">By using <a class="brinkgaming">Brink Gaming</a>, You agree to Our <a class="brinkgaming">Terms of service</a> and <a class="brinkgaming">Privacy policy</a>.</p>
+        </form>
+    </div>
+    <script src="brinkWork.js"></script>
 </body>
 </html>
